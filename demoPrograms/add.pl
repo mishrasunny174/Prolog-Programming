@@ -1,3 +1,2 @@
-add(X,Y):-
-	Sum is X+Y,
-	write(("Sum"=Sum)).
+add(X,Y,Sum):-
+	Sum is X+Y.
