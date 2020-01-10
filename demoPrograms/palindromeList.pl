@@ -11,7 +11,10 @@ palindrome(List):-
 /*
 This predicate is the base case for palindrome check, if there are two empty lists they are already a 
 palindrome we will use this fact to our benifit to define the base case for the recursion of 
-palindrome check.
+palindrome check. The logic behind compare function is:-
+1) Check if list are empty, if they are empty then the list is palindrome i.e, base case
+2) If the lists are not empty then take the head out of the list compare these two if they are same recurse for the tail
+	if they are not same then the list is not palindrome
 */
 compare([], []):-
 	write('List is palindrome'), nl.
