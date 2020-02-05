@@ -2,9 +2,9 @@
 number N. */
 
 factorial(1, F):-
-				F is 1.
+	F is 1.
 
 factorial(N, F):-
-				N1 is N-1,
-				factorial(N1, F1),
-				F is F1*N.
+	N1 is N-1,
+	factorial(N1, F1),
+	F is F1*N.

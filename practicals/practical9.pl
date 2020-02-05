@@ -11,5 +11,5 @@ edge(s, t).
 route(A, A).
 
 route(A, B):-
-				edge(A, B);
-				(edge(A, C), edge(D, B), route(C, D)).
+	edge(A, B);
+	(edge(A, C), edge(D, B), route(C, D)).

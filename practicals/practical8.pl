@@ -3,6 +3,6 @@ discs */
 towerofhanoi(1, 1).
 
 towerofhanoi(N, Res):-
-				N1 is N-1,
-				towerofhanoi(N1, Res1),
-				Res is 2*Res1+1.
+	N1 is N-1,
+	towerofhanoi(N1, Res1),
+	Res is 2*Res1+1.
